@@ -107,9 +107,9 @@ def addBookTags(catalog, booktagsfile):
     el mismo procedimiento que la funcion addBooks.
     """
     # TODO: Mods Lab 1, completar funcion.
-    book_Tags = catalog.get("book_tags") 
-    lt.newList(datastructure="SINGLE_LINKED",filename= booktagsfile)
-    catalog.update({"bookstags": book_Tags})
+    book_tags = catalog.get("book_tags") 
+    book_tags = lt.newList(datastructure="SINGLE_LINKED",filename= booktagsfile)
+    catalog.update({"book_tags": book_tags})
     return catalog
 
 
